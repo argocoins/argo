@@ -81,9 +81,9 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const Conse
 }
 
 unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consensus::Params& params) {
-    /* current difficulty formula, dash - DarkGravity v3, written by Evan Duffield - evan@dash.org */
+    /* current difficulty formula, argo - DarkGravity v3, written by Evan Duffield - evan@argo.org */
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
-    int64_t nPastBlocks = 24;
+    int64_t nPastBlocks = 48;
 
     // make sure we have at least (nPastBlocks + 1) blocks, otherwise just return powLimit
     if (!pindexLast || pindexLast->nHeight < nPastBlocks) {
@@ -166,21 +166,12 @@ unsigned int GetNextWorkRequiredBTC(const CBlockIndex* pindexLast, const CBlockH
     const CBlockIndex* pindexFirst = pindexLast->GetAncestor(nHeightFirst);
     assert(pindexFirst);
 
-   return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
+    return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
 }
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
-    // Most recent algo first
-    if (pindexLast->nHeight + 1 >= params.nPowDGWHeight) {
-        return DarkGravityWave(pindexLast, params);
-    }
-    else if (pindexLast->nHeight + 1 >= params.nPowKGWHeight) {
-        return KimotoGravityWell(pindexLast, params);
-    }
-    else {
-        return GetNextWorkRequiredBTC(pindexLast, pblock, params);
-    }
+    return DarkGravityWave(pindexLast, params);
 }
 
 // for DIFF_BTC only!

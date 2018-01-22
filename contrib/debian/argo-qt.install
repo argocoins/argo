@@ -1,0 +1,6 @@
+usr/local/bin/argo-qt usr/bin
+share/pixmaps/argo32.xpm usr/share/pixmaps
+share/pixmaps/argo16.xpm usr/share/pixmaps
+share/pixmaps/argo128.png usr/share/pixmaps
+debian/argo-qt.desktop usr/share/applications
+debian/argo-qt.protocol usr/share/kde4/services/

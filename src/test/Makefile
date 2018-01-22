@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. dash_test
+	$(MAKE) -C .. argo_test
 clean:
-	$(MAKE) -C .. dash_test_clean
+	$(MAKE) -C .. argo_test_clean
 check:
-	$(MAKE) -C .. dash_test_check
+	$(MAKE) -C .. argo_test_check

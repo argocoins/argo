@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2014-2017 The Argo Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -329,7 +329,23 @@ public:
 uint64_t SipHashUint256(uint64_t k0, uint64_t k1, const uint256& val);
 uint64_t SipHashUint256Extra(uint64_t k0, uint64_t k1, const uint256& val, uint32_t extra);
 
-/* ----------- Dash Hash ------------------------------------------------ */
+/* ----------- Argo Hash ------------------------------------------------ */
+template<typename T1>
+inline uint256 skein(const T1 pbegin, const T1 pend)
+
+{
+    sph_skein512_context ctx_skein;
+    static unsigned char pblank[1];
+
+    uint512 hash;
+
+    sph_skein512_init(&ctx_skein);
+    sph_skein512 (&ctx_skein, (pbegin == pend ? pblank : static_cast<const void*>(&pbegin[0])), (pend - pbegin) * sizeof(pbegin[0]));
+    sph_skein512_close(&ctx_skein, static_cast<void*>(&hash));
+
+    return hash.trim256();
+}
+
 template<typename T1>
 inline uint256 HashX11(const T1 pbegin, const T1 pend)
 

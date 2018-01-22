@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Argo
+Comment=Argo P2P Cryptocurrency
+Comment[fr]=Argo, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Argo, eşten eşe kriptografik sanal para birimi
+Exec=argo-qt %u
+Terminal=false
+Type=Application
+Icon=argo128
+MimeType=x-scheme-handler/argo;
+Categories=Office;Finance;

@@ -9,10 +9,31 @@
 #include "tinyformat.h"
 #include "utilstrencodings.h"
 #include "crypto/common.h"
+#include "crypto/sha256_y.h"
+
+using namespace sha256_y;
+
+void skein_hash(const char* input, char* output, uint32_t len)
+{
+    char temp[64];
+
+    sph_skein512_context ctx_skien;
+    sph_skein512_init(&ctx_skien);
+    sph_skein512(&ctx_skien, input, len);
+    sph_skein512_close(&ctx_skien, &temp);
+
+    SHA256_CTX ctx_sha256;
+    SHA256_Init(&ctx_sha256);
+    SHA256_Update(&ctx_sha256, &temp, 64);
+    SHA256_Final((unsigned char*) output, &ctx_sha256);
+}
 
 uint256 CBlockHeader::GetHash() const
 {
-    return skein(BEGIN(nVersion), END(nNonce));
+    uint256 thash;
+    uint32_t len = (END(nNonce) - BEGIN(nVersion))*sizeof(BEGIN(nVersion)[0]);
+    skein_hash(&BEGIN(nVersion)[0], (char *) &thash, len);
+    return thash;
 }
 
 std::string CBlock::ToString() const

@@ -857,27 +857,27 @@
         <translation>Bitten wählen Sie eine Datenschutz-Stufe.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 ARGO</source>
-        <translation>Benutze 2 separate Masternodes um bis zu 1000 ARGO zu mixen</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ARGO</source>
+        <translation>Benutze 2 separate Masternodes um bis zu 10000 ARGO zu mixen</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 ARGO</source>
-        <translation>Benutze 8 separate Masternodes um bis zu 1000 ARGO zu mixen</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ARGO</source>
+        <translation>Benutze 8 separate Masternodes um bis zu 10000 ARGO zu mixen</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Benutze 16 separate Masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ARGO to anonymize 1000 ARGO</source>
-        <translation>Diese Option ist am Schnellsten und kostet ungefähr 0,025 ARGO, um 1000 ARGO zu anonymisieren</translation>
+        <source>This option is the quickest and will cost about ~0.025 ARGO to anonymize 10000 ARGO</source>
+        <translation>Diese Option ist am Schnellsten und kostet ungefähr 0,025 ARGO, um 10000 ARGO zu anonymisieren</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ARGO to anonymize 1000 ARGO</source>
-        <translation>Diese Option ist einigermaßen schnell und kostet ungefähr 0,05 ARGO, um 1000 ARGO zu anonymisieren</translation>
+        <source>This option is moderately fast and will cost about 0.05 ARGO to anonymize 10000 ARGO</source>
+        <translation>Diese Option ist einigermaßen schnell und kostet ungefähr 0,05 ARGO, um 10000 ARGO zu anonymisieren</translation>
     </message>
     <message>
-        <source>0.1 ARGO per 1000 ARGO you anonymize.</source>
+        <source>0.1 ARGO per 10000 ARGO you anonymize.</source>
         <translation>0,1 ARGO pro 1000 zu anonymisierende Argo.</translation>
     </message>
     <message>
@@ -4076,8 +4076,8 @@ Dies kann passieren, wenn einige Argo aus ihrer Wallet bereits ausgegeben wurden
         <translation>Dieses Produkt enthält vom OpenSSL-Projekt entwickelte Software zur Benutzung des OpenSSL Toolkit &lt;https://www.openssl.org/&gt;, kryptographische Software geschrieben von Eric Young und UPnP Software geschrieben von Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 ARGO.</source>
-        <translation>Für diese Transaktion konnten nicht genug Beträge gefunden werden, die ungleich 1000 ARGO sind.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ARGO.</source>
+        <translation>Für diese Transaktion konnten nicht genug Beträge gefunden werden, die ungleich 10000 ARGO sind.</translation>
     </message>
     <message>
         <source>Use hierarchical deterministic key generation (HD) after bip39/bip44. Only has effect during wallet creation/first start</source>
@@ -4677,8 +4677,8 @@ Argo Core wird heruntergefahren.</translation>
         <translation>Für diese Transaktion konnten nicht genug mit PrivateSend gestückelte Beträge gefunden werden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 ARGO.</source>
-        <translation>Für diese Transaktion konnten nicht genug nicht mit PrivateSend gestückelte Beträge gefunden werden, die ungleich 1000 ARGO sind.</translation>
+        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 10000 ARGO.</source>
+        <translation>Für diese Transaktion konnten nicht genug nicht mit PrivateSend gestückelte Beträge gefunden werden, die ungleich 10000 ARGO sind.</translation>
     </message>
     <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>

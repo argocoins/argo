@@ -94,7 +94,7 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     /* Theme selector */
     ui->theme->addItem(QString("ARGO-light"), QVariant("light"));
     ui->theme->addItem(QString("ARGO-light-hires"), QVariant("light-hires"));
-    ui->theme->addItem(QString("ARGO-blue"), QVariant("drkblue"));
+    ui->theme->addItem(QString("ARGO-green"), QVariant("drkblue"));
     ui->theme->addItem(QString("ARGO-Crownium"), QVariant("crownium"));
     ui->theme->addItem(QString("ARGO-traditional"), QVariant("trad"));
     

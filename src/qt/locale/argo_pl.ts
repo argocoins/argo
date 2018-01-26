@@ -857,28 +857,28 @@
         <translation>Proszę wybrać poziom prywatności.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 ARGO</source>
-        <translation>Użyj 2 oddzielnych masternodów, aby wymieszać środki max. do 1000 ARGO</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ARGO</source>
+        <translation>Użyj 2 oddzielnych masternodów, aby wymieszać środki max. do 10000 ARGO</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 ARGO</source>
-        <translation>Użyj 8 oddzielnych masternodów, aby wymieszać środki max. do 1000 ARGO</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ARGO</source>
+        <translation>Użyj 8 oddzielnych masternodów, aby wymieszać środki max. do 10000 ARGO</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Użyj 16 oddzielnych masternodów</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ARGO to anonymize 1000 ARGO</source>
-        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 ARGO za zanonimizowanie 1000 ARGO</translation>
+        <source>This option is the quickest and will cost about ~0.025 ARGO to anonymize 10000 ARGO</source>
+        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 ARGO za zanonimizowanie 10000 ARGO</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ARGO to anonymize 1000 ARGO</source>
-        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 ARGO za zanonimizowanie 1000 ARGO</translation>
+        <source>This option is moderately fast and will cost about 0.05 ARGO to anonymize 10000 ARGO</source>
+        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 ARGO za zanonimizowanie 10000 ARGO</translation>
     </message>
     <message>
-        <source>0.1 ARGO per 1000 ARGO you anonymize.</source>
-        <translation>0.1 ARGO za każde 1000 ARGO, które zanonimizujesz.</translation>
+        <source>0.1 ARGO per 10000 ARGO you anonymize.</source>
+        <translation>0.1 ARGO za każde 10000 ARGO, które zanonimizujesz.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -4057,8 +4057,8 @@ https://www.transifex.com/projects/p/argo/</translation>
         <translation>Produkt ten zawiera oprogramowanie stworzone przez OpenSSL Project do użytku w OpenSSL Toolkit &lt;https://www.openssl.org/&gt;, oprogramowanie krptograficzne napisane przez Eric Young oraz oprogramowanie UPnP napisane przez Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 ARGO.</source>
-        <translation>Niemożliwe jest zlokalizowanie wystarczającej ilości środków dla tej transakcji, które nie są równe 1000 ARGO.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ARGO.</source>
+        <translation>Niemożliwe jest zlokalizowanie wystarczającej ilości środków dla tej transakcji, które nie są równe 10000 ARGO.</translation>
     </message>
     <message>
         <source>Use hierarchical deterministic key generation (HD) after bip39/bip44. Only has effect during wallet creation/first start</source>

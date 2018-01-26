@@ -329,21 +329,22 @@ public:
 uint64_t SipHashUint256(uint64_t k0, uint64_t k1, const uint256& val);
 uint64_t SipHashUint256Extra(uint64_t k0, uint64_t k1, const uint256& val, uint32_t extra);
 
-/* ----------- Argo Hash ------------------------------------------------ */
-template<typename T1>
-inline uint256 skein(const T1 pbegin, const T1 pend)
+template<typename T1> 
+inline uint256 HashSkein(const T1 pbegin, const T1 pend) 
+{ 
+    static unsigned char pblank[1]; 
 
-{
+    unsigned char temp[64];
+
     sph_skein512_context ctx_skein;
-    static unsigned char pblank[1];
-
-    uint512 hash;
-
     sph_skein512_init(&ctx_skein);
     sph_skein512 (&ctx_skein, (pbegin == pend ? pblank : static_cast<const void*>(&pbegin[0])), (pend - pbegin) * sizeof(pbegin[0]));
-    sph_skein512_close(&ctx_skein, static_cast<void*>(&hash));
-
-    return hash.trim256();
+    sph_skein512_close(&ctx_skein, &temp);
+    CHash256 ctx;
+    ctx.Write((const unsigned char*)&temp, 64);
+    uint256 result;
+    ctx.Finalize((unsigned char*)&result);
+    return result;
 }
 
 template<typename T1>

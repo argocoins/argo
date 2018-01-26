@@ -841,28 +841,28 @@
         <translation>Prosím vyberte úroveň súkromia.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 ARGO</source>
-        <translation>Použiť 2 rozdielne masternode pre fixovanie prostriedkov až do 1000 ARGO</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ARGO</source>
+        <translation>Použiť 2 rozdielne masternode pre fixovanie prostriedkov až do 10000 ARGO</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 ARGO</source>
-        <translation>Použiť 8 rozdielnych masternode pre fixovanie prostriedkov až do 1000 ARGO</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ARGO</source>
+        <translation>Použiť 8 rozdielnych masternode pre fixovanie prostriedkov až do 10000 ARGO</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použiť 16 rozdielnych masternode</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ARGO to anonymize 1000 ARGO</source>
-        <translation>Táto možnosť je najrýchlejšia a bude stáť približne 0.025 ARGO pre anonimizáciu 1000 ARGO</translation>
+        <source>This option is the quickest and will cost about ~0.025 ARGO to anonymize 10000 ARGO</source>
+        <translation>Táto možnosť je najrýchlejšia a bude stáť približne 0.025 ARGO pre anonimizáciu 10000 ARGO</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ARGO to anonymize 1000 ARGO</source>
-        <translation>Táto možnosť je stredne rýchla bude stáť približne 0.05 ARGO pre anonimizáciu 1000 ARGO</translation>
+        <source>This option is moderately fast and will cost about 0.05 ARGO to anonymize 10000 ARGO</source>
+        <translation>Táto možnosť je stredne rýchla bude stáť približne 0.05 ARGO pre anonimizáciu 10000 ARGO</translation>
     </message>
     <message>
-        <source>0.1 ARGO per 1000 ARGO you anonymize.</source>
-        <translation>0.1 ARGO za 1000 ARGO ktoré spravíte anonymnými.</translation>
+        <source>0.1 ARGO per 10000 ARGO you anonymize.</source>
+        <translation>0.1 ARGO za 10000 ARGO ktoré spravíte anonymnými.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -3790,8 +3790,8 @@ https://www.transifex.com/projects/p/argo/</translation>
         <translation>Tento produkt obsahuje softvér vyvinutý projektom OpenSSL pre použitie sady nástrojov OpenSSL &lt;https://www.openssl.org/&gt; a kryptografického softvéru napísaného Eric Young a UPnP softvér napísaný Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 ARGO.</source>
-        <translation>Nenašiel sa dostatok prostriedkov pre túto transakciu, ktorú nie sú rovné 1000 ARGO.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ARGO.</source>
+        <translation>Nenašiel sa dostatok prostriedkov pre túto transakciu, ktorú nie sú rovné 10000 ARGO.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4250,8 +4250,8 @@ https://www.transifex.com/projects/p/argo/</translation>
         <translation>Nedá sa nájsť dostatok denominácií PrivateSend pre túto transakciu. </translation>
     </message>
     <message>
-        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 ARGO.</source>
-        <translation>Nedá sa nájsť dostatok ne-denominovaných PrivateSend zdrojov pre túto transakciu, ktoré nie sú rovné 1000 ARGO.</translation>
+        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 10000 ARGO.</source>
+        <translation>Nedá sa nájsť dostatok ne-denominovaných PrivateSend zdrojov pre túto transakciu, ktoré nie sú rovné 10000 ARGO.</translation>
     </message>
     <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>

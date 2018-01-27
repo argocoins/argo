@@ -1251,27 +1251,21 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 
 CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
 {
-  CAmount ret = blockValue*25/100;
-  int nRampPeriod = 51200;
+  CAmount ret = blockValue*40/100;
+  int nRampPeriod = 64000;
   if (nHeight < nRampPeriod)
-    ret = blockValue*25/100;
-  else if (nHeight < 2*nRampPeriod)
-    ret = blockValue*30/100;
-  else if (nHeight < 3*nRampPeriod)
-    ret = blockValue*35/100;
-  else if (nHeight < 4*nRampPeriod)
     ret = blockValue*40/100;
-  else if (nHeight < 5*nRampPeriod)
+  else if (nHeight < 2*nRampPeriod)
     ret = blockValue*45/100;
-  else if (nHeight < 6*nRampPeriod)
+  else if (nHeight < 3*nRampPeriod)
     ret = blockValue*50/100;
-  else if (nHeight < 7*nRampPeriod)
+  else if (nHeight < 4*nRampPeriod)
     ret = blockValue*55/100;
-  else if (nHeight < 8*nRampPeriod)
+  else if (nHeight < 5*nRampPeriod)
     ret = blockValue*60/100;
-  else if (nHeight < 9*nRampPeriod)
+  else if (nHeight < 6*nRampPeriod)
     ret = blockValue*65/100;
-  else if (nHeight < 10*nRampPeriod)
+  else if (nHeight < 7*nRampPeriod)
     ret = blockValue*70/100;
   else // 512000+
     ret = blockValue*75/100;
